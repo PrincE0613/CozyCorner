@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    font-family:'Montserrat' , sans-serif;
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+
+}
+.navbar a{
+    font-size: 14px;
+    font-weight:500 ;
+
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+.w-100-height {
+    height: 90vh;
+    width: 100%;
+
+}
+.carousel-item {
+    min-height:300px ;
+}
+.carousel-caption {
+    text-align: left;
+    margin-bottom: 200px;
+    z-index: 2;
+
+}
+.carousel-caption h5 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    line-height: 60px;
+    text-align: left;
+}
+.carousel-caption p{
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+
+}
+.carousel-item .carousel-caption input{
+    padding: 0.73rem;
+
+}
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+}
+.card-bottom{
+    right: 0;
+    margin-top: -178px;
+
+}
+.card-text{
+    color: #aeaeae;
+
+}
+.card-color{
+    background-color: #000;
+}
