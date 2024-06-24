@@ -46,7 +46,7 @@
             <a href="#" class="navbar-link" data-nav-link>About Us</a>
         </li>
         <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="#" class="navbar-link" id="Contact us" data-nav-link>Contact us</a>
         </li>
         </ul>
 </nav>
@@ -94,7 +94,7 @@
 
               <div class="input-wrapper">
 
-                <label for="search" class="input-label">Search : *</label>
+                <label for="search" class="input-label">Search</label>
 
                 <input type="search" name="search" id="search" placeholder="Search your home" required
                   class="input-field">
@@ -104,10 +104,11 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="category" class="input-label">Select Categories:</label>
+                <label for="category" class="input-label">Select Categories</label>
 
                 <select name="category" id="category" class="dropdown-list">
 
+                  <option value="house">Select</option>
                   <option value="house">House</option>
                   <option value="apartment">Apartment</option>
                   <option value="offices">Offices</option>
@@ -116,7 +117,7 @@
               </div>
               
               <div class="input-wrapper">
-                <label for="category" class="input-label">Select Area:</label>
+                <label for="category" class="input-label">Select Area</label>
 
                 <select name="category" id="category" class="dropdown-list">
                   <option value="offices">Select</option>
@@ -129,9 +130,15 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="min-price" class="input-label">Min Price :</label>
+                <label for="Price_Range" class="input-label">Price Range</label>
+                <br>
+              <div class="input-wrapper">
+<label for="Minimum-price" class="input-label">Minimum Price</label>
+                
+<input type="Minimum Price" name="Minimum Price" id="Minimum Price" placeholder="Enter amount" required
+class="input-field">
 
-                <select name="min-price" id="min-price" class="dropdown-list">
+                <!-- <select name="min-price" id="min-price" class="dropdown-list">
 
                   <option value="min price">Min Price</option>
                   <option value="500">500</option>
@@ -142,13 +149,16 @@
                   <option value="5000">5000</option>
                   <option value="6000">6000</option>
 
-                </select>
+                </select> -->
               </div>
 
               <div class="input-wrapper">
-                <label for="max-price" class="input-label">Max Price :</label>
+                <label for="Maximum-price" class="input-label">Maximum Price</label>
+                
+                <input type="Maximum Price" name="Maximum Price" id="Maximum Price" placeholder="Enter amount" required
+                  class="input-field">
 
-                <select name="max-price" id="max-price" class="dropdown-list">
+                <!-- <select name="max-price" id="max-price" class="dropdown-list">
 
                   <option value="max price">Max Price</option>
                   <option value="500">500</option>
@@ -159,7 +169,7 @@
                   <option value="5000">5000</option>
                   <option value="6000">6000</option>
 
-                </select>
+                </select> -->
               </div>
 
               <button type="submit" class="btn btn-primary">Search now</button>
@@ -176,7 +186,7 @@
         <div class="container">
 
           <div class="about-banner img-holder" style="--width: 600; --height: 700;">
-            <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
+            <img src="/Images/project-2.jpg" width="600" height="700" loading="lazy" alt="about banner"
               class="img-cover">
 
             <button class="play-btn" aria-label="play video">
@@ -279,7 +289,7 @@
               <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                  <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                  <img src="/Images/home1.jpg" width="800" height="533" loading="lazy"
                     alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
                 </figure>
 
@@ -358,7 +368,7 @@
               <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                  <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                  <img src="/Images/home2.jpg" width="800" height="533" loading="lazy"
                     alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
                 </figure>
 
@@ -437,7 +447,7 @@
               <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                  <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                  <img src="/Images/home4.jpg" width="800" height="533" loading="lazy"
                     alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
                 </figure>
 
@@ -516,7 +526,7 @@
               <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                  <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                  <img src="/Images/home7.jpg" width="800" height="533" loading="lazy"
                     alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
                 </figure>
 
@@ -595,7 +605,7 @@
               <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                  <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                  <img src="/Images/home8.jpg" width="800" height="533" loading="lazy"
                     alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
                 </figure>
 
@@ -674,7 +684,7 @@
             <div class="property-card">
 
                 <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                <img src="/Images/home-2.jpg" width="800" height="533" loading="lazy"
                     alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
                 </figure>
 
@@ -775,13 +785,13 @@
 
     <section class="newsletter" aria-label="newsletter">
         <div class="container">
-
+        
         <div class="wrapper">
             <h2 class="h2 section-title">Subscribe to CozyCorner!</h2>
             <p class="section-text">Subscribe to get latest updates and information.</p>
             <p>..........<b>STAY UPDATED</b>..........</p>
         </div>
-
+        
         <form action="" class="CozyCorner">
             <input type="email" name="email_address" placeholder="Enter your email here " aria-label="Enter your email here "
             required class="email-field">
@@ -940,7 +950,7 @@
     <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
     </a>
 <!--custom js link-->
-<script src="./assets/js/script.js" defer></script>
+<script src="script.js" defer></script>
 <!--ionicon link-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
