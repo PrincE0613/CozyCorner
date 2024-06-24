@@ -399,9 +399,7 @@ body {
   
   
   
-  /*-----------------------------------*\
-    #ABOUT
-  \*-----------------------------------*/
+  /*--#ABOUT---*/
   
   .about .section-title { max-width: 20ch; }
   
@@ -410,6 +408,7 @@ body {
     overflow: hidden;
     border-radius: var(--radius-16);
     margin-block-end: 30px;
+    
   }
   
   .about-banner .play-btn {
@@ -430,9 +429,7 @@ body {
   
   
   
-  /*-----------------------------------*\
-    #SERVICE
-  \*-----------------------------------*/
+  /*--#SERVICE---*/
   
   .service :is(.section-title, .section-text) { text-align: center; }
   
@@ -617,6 +614,7 @@ body {
   .newsletter .container {
     display: grid;
     gap: 30px;
+    
   }
   
   .newsletter .section-title { font-weight: var(--fw-500); }
@@ -629,6 +627,7 @@ body {
     padding-inline-end: 130px;
     border: 1px solid var(--gainsboro);
     border-radius: 50px;
+    border-color: black;
     outline: none;
   }
   
