@@ -17,6 +17,13 @@ app.get("/landlord", (req, res) => {
     contact: 9897535444,
   });
 
+  const newLandlord2 = landlord.create({
+    userID: 2,
+    name: "Krishna",
+    email: "krishna@gmail.com",
+    contact: 9876543210,
+  });
+
   res.send("Land Lord");
 });
 
