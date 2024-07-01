@@ -1,6 +1,7 @@
 const express = require("express");
 const connectWithDB = require("./db");
 const landlord = require("./model/landlord.model");
+const tenant = require("./model/tenant.model");
 const app = express();
 connectWithDB();
 
@@ -25,6 +26,24 @@ app.get("/landlord", (req, res) => {
   });
 
   res.send("Land Lord");
+});
+
+app.get("/tenant", (req, res) => {
+  const newTenant = tenant.create({
+    userID: 1,
+    name: "Sparsh",
+    email: "Sparsh@gmail.com",
+    contact: 9897535444,
+  });
+
+  const newTenant2 = tenant.create({
+    userID: 2,
+    name: "Shyam",
+    email: "Shyam@gmail.com",
+    contact: 9876543210,
+  });
+
+  res.send("Tenant");
 });
 
 app.listen(8000, () => {
