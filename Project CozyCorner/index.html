@@ -2,16 +2,35 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+<!-- meta tags from magikbricks -->
+
+
+<title>Cozy Corner The Real Estate Website where you will get your drem Property Property | Buy/Sale/Rent Properties |CozyCorner</title>
+<meta name="description" content="Search Real Estate Properties in India at CozyCorner, the best property site in India. Buy, Sell, Rent residential and commercial properties"/>
+<meta name="keywords" content="Real Estate, Property in India, Properties, Property sites India"/>
+<!-- <link rel="shortcut icon" href="https://cdn.staticmb.com/images/favicon.ico"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimum-scale=1.0"/>
+<meta name="Owner" content="CozyCorner.com"/>
+<meta name="Copyright" content="CozyCorner.com"/>
+<meta name="classification" content="Real Estate Property Search"/>
+<meta name="distribution" content="India"/>
+<meta name="rating" content="General"/>
+<meta name="subject" content="Search Property for Sale And Rent, Search New	Projects, Builders And Property Dealers in India"/>
+<meta name="audience" content="All"/>
+<meta name="msvalidate.01" content="BDFFCB7E39CF4C9A6094DE4107809AD3"/>
+
+
+<!-- <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CozyCorner - Choose your dream place</title>
+<title>CozyCorner - Choose your dream place</title> -->
 
 <!--favicon-->
-<link rel="shortcut icon" href="./favicon.svg" type="image/svg+ml">
+<link rel="shortcut icon" href="/Images/Screenshot 2024-07-02 120426.png" type="image/svg+ml">
 
 <!--custom css link-->
 <link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style2.css"> -->
 
 <!--google font link-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,26 +40,35 @@
 </head>
 
 <body id="top">
+
+    <!-- Cities -->
+      
+
+
 <!--#HEADER-->
 
 <header class="header" data-header>
     <div class="container">
     <a href="#" class="logo">
+    
         <ion-icon name="business-outline"></ion-icon> CozyCorner</a>
+        
 <!-- Navigation Bar -->
     <nav class="navbar container" data-navbar>
         <ul class="navbar-list">
         <li>
             <a href="#" class="navbar-link" data-nav-link>Home</a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#" class="navbar-link" data-nav-link>Buy</a>
         </li>
         <li>
             <a href="#" class="navbar-link" data-nav-link>Sell</a>
+        </li> -->
+          
         </li>
         <li>
-            <a href="#" class="navbar-link" data-nav-link>Listing</a>
+            <a href="#" class="navbar-link" data-nav-link>listings</a>
         </li>
         <li>
             <a href="#" class="navbar-link" data-nav-link>About Us</a>
@@ -49,9 +77,14 @@
             <a href="#" class="navbar-link" id="Contact us" data-nav-link>Contact us</a>
         </li>
         </ul>
+        
 </nav>
+    
+          <!-- sliding bg function -->
+          
+    
 <!-- Signup Settings -->
-    <a href="#" class="btn btn-secondary">Signup</a>
+    <a href="#" class="btn btn-secondary">List Your Property</a>
     <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
         <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
@@ -90,45 +123,82 @@
 
             </div>
 
-            <form action="" class="hero-form">
+            <form action="/Backend/" class="hero-form">
 
               <div class="input-wrapper">
-
-                <label for="search" class="input-label">Search</label>
-
-                <input type="search" name="search" id="search" placeholder="Search your home" required
-                  class="input-field">
-
-                <ion-icon name="search-outline"></ion-icon>
-
+                <label for="search" class="input-label">Select your Location</label><br>
+                  <!-- <a href="#" class="navbar-link" data-nav-link>Location</a> -->
+        <!--- India states -->
+<select id="country-state" name="country-state">
+  <option value="">Select state</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CH">Chandigarh</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="DN">Dadra and Nagar Haveli</option>
+  <option value="DD">Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="LA">Ladakh</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PY">Puducherry</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UT">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+</select>
+                <!-- <input type="search" name="search" id="search" placeholder="Search your home" required
+                  class="input-field"> -->
+                <!-- <ion-icon name="search-outline"></ion-icon> -->
+                
               </div>
-
               <div class="input-wrapper">
                 <label for="category" class="input-label">Select Categories</label>
-
                 <select name="category" id="category" class="dropdown-list">
-
                   <option value="house">Select</option>
                   <option value="house">House</option>
                   <option value="apartment">Apartment</option>
                   <option value="offices">Offices</option>
-
                 </select>
               </div>
               
               <div class="input-wrapper">
-                <label for="category" class="input-label">Select Area</label>
-
+                <label for="category" class="input-label">Select House/Apartment Area </label>
                 <select name="category" id="category" class="dropdown-list">
                   <option value="offices">Select</option>
                   <option value="offices">1BHK</option>
                   <option value="house">2BHk</option>
                   <option value="apartment">3BHK</option>
                   <option value="offices">4BHK</option>
-
+        <option value="small">Small (up to 1000 sq ft)</option>
+        <option value="medium">Medium (1000 - 2000 sq ft)</option>
+        <option value="large">Large (2000 - 3000 sq ft)</option>
+        <option value="extra-large">Extra Large (3000+ sq ft)</option>
                 </select>
               </div>
-
+                                                          <!-- Price Range  -->
               <div class="input-wrapper">
                 <label for="Price_Range" class="input-label">Price Range</label>
                 <br>
@@ -137,40 +207,40 @@
                 
 <input type="Minimum Price" name="Minimum Price" id="Minimum Price" placeholder="Enter amount" required
 class="input-field">
-
-                <!-- <select name="min-price" id="min-price" class="dropdown-list">
-
-                  <option value="min price">Min Price</option>
-                  <option value="500">500</option>
-                  <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="3000">3000</option>
-                  <option value="4000">4000</option>
-                  <option value="5000">5000</option>
-                  <option value="6000">6000</option>
-
-                </select> -->
+<br>
               </div>
-
               <div class="input-wrapper">
                 <label for="Maximum-price" class="input-label">Maximum Price</label>
                 
                 <input type="Maximum Price" name="Maximum Price" id="Maximum Price" placeholder="Enter amount" required
                   class="input-field">
-
-                <!-- <select name="max-price" id="max-price" class="dropdown-list">
-
-                  <option value="max price">Max Price</option>
-                  <option value="500">500</option>
-                  <option value="1000">1000</option>
-                  <option value="2000">2000</option>
-                  <option value="3000">3000</option>
-                  <option value="4000">4000</option>
-                  <option value="5000">5000</option>
-                  <option value="6000">6000</option>
-
-                </select> -->
               </div>
+              <!-- <div class="wrapper">
+                <header>
+                  <h2>Price Range</h2>
+                  <p>Use slider or enter min and max price</p>
+                </header>
+                <div class="price-input">
+                  <div class="field">
+                    <span>Min</span>
+                    <input type="number" class="input-min" value="2500">
+                  </div>
+                  <div class="separator">-</div>
+                  <div class="field">
+                    <span>Max</span>
+                    <input type="number" class="input-max" value="7500">
+                  </div>
+                </div>
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                </div>
+              </div> -->
+                                                          <!-- Price Range End -->
+              <br>
 
               <button type="submit" class="btn btn-primary">Search now</button>
               

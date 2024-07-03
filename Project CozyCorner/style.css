@@ -212,6 +212,12 @@ body {
     color: var(--black);
   }
   
+  /* .logo ion-icon {
+    display: inline-block;
+    color: var(--sea-green);
+    --ionicon-stroke-width: 50px;
+  }
+   */
   .logo ion-icon {
     display: inline-block;
     color: var(--sea-green);
@@ -292,6 +298,7 @@ body {
     background-position: center;
     border-radius: var(--radius-16);
     overflow: hidden;
+    /* height: 800px; */
   }
   
   .hero-content {
@@ -346,6 +353,7 @@ body {
     font-weight: var(--fw-500);
     border-radius: var(--radius-6);
     transition: var(--transition);
+    
   }
   
   .tab-btn:is(:hover, :focus) { color: var(--green-pigment); }
@@ -363,7 +371,7 @@ body {
   
   .hero-form .input-wrapper { position: relative; }
   
-  .hero-form :is(.input-label, .input-field) { color: var(--oxford-blue); }
+  .hero-form :is(.input-wrapper, .input-field) { color: var(--oxford-blue); }
   
   .hero-form .input-label {
     font-weight: var(--fw-500);
