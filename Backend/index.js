@@ -2,6 +2,7 @@ const express = require("express");
 const connectWithDB = require("./db");
 const landlord = require("./model/landlord.model");
 const tenant = require("./model/tenant.model");
+const properties = require("./model/properties.model");
 const app = express();
 connectWithDB();
 
