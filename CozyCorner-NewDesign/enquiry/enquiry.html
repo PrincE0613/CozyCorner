@@ -1,14 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>here you can ask anything</title>
-    <link rel="stylesheet" href="enquiry.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Corner - Find your dream house</title>
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="assets/icons8-cc.gif">
+
+  <!--custom css link-->
+  <link rel="stylesheet" href="enquiry.css">
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
-<body style="background-color: brown;">
-    <h1>
-        make an enquiry page under progress ....
-    </h1>
-</body>
-</html>
+
+<body>
+
+  <!-- #HEADER-->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+<!-- mail section  -->
+        <li>
+            <a href="mailto:cozycorner@gmail.com" class="header-top-link">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>cozycorner@gmail.com</span>
+        </a>
+    </li>
+<!-- location || google maps link pending -->
+        <li>
+            <a href="https://maps.app.goo.gl/2iMQzLHGRhtJPM8L8" class="header-top-link">
+            <ion-icon name="location-outline"></ion-icon>
+            <address>Sector 33,Gurugram,Haryana,India</address>
+            </a>
+        </li>
+
+        </ul>
+<!-- logos  -->
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+<!-- facebook  || link Add krna baaki haii abhi-->
+            <li>
+              <a href="https://m.facebook.com" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+<!-- twitter || link Add krna baaki haii abhi -->
+            <li>
+              <a href="https://x.com/?lang=en-in" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+<!-- instagram || link Add krna baaki haii abhi-->
+            <li>
+              <a href="https://www.instagram.com/?hl=en" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+<!-- pinterest  || link Add krna baaki haii abhi-->
+            <li>
+              <a href="https://www.pinterest.com/login/" class="header-top-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+          </ul>
+<!-- logo ends  -->
+
+<!-- buttons  -->
+          <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
+          <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+<!-- website logo  -->
+        <a href="#" class="logo">
+          <img src="/CozyCorner-NewDesign/assets/icons8-cc.gif" alt="cozycorner logo">
+        </a>
+        <h1 id="name">Cozy Corner</h1>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="assets/icons8-cc.gif" alt="CozyCorner logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+<!-- <navigation links  -->
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a href="#loogoo" class="navbar-link" data-nav-link>Contact us</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+<!-- navigation ends  -->
+
+<!-- icon buttons ends -->
+        <div class="header-bottom-actions">
+
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+            <span>Search</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+            <span>Profile</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span>Cart</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <span>Menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- icons buttons ends -->
+  </header>
