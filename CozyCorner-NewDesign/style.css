@@ -342,14 +342,15 @@
     margin-bottom: 25px;
   }
   
-  .navbar-top .logo img { width: 200px; }
+  /* sliding icon navbar logo */
+  .navbar-top .logo img { width: 250px; }
   
   .nav-close-btn ion-icon {
     font-size: 20px;
     --ionicon-stroke-width: 45px;
     padding: 5px;
   }
-  
+  /*SLiding Navbar links (HOME , ABOUT , SERVICES , PROPERTY , BLOGS , CONTACT US) */
   .navbar-link {
     color: var(--cadet);
     font-size: var(--fs-5);
@@ -358,6 +359,7 @@
     padding-block: 15px;
   }
   
+  /* after hover pointer on it */
   .navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
   
   .overlay {
@@ -387,7 +389,7 @@
     box-shadow: -2px 0 30px hsla(237, 71%, 52%, 0.2);
     z-index: 3;
   }
-  
+  /* icon (cart , account , search , menu ) */
   .header-bottom-actions-btn ion-icon {
     color: hsl(0, 0%, 10%);
     font-size: 20px;
