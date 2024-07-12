@@ -16,8 +16,7 @@
   <!--google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 </head>
 
@@ -26,13 +25,11 @@
   <!-- #HEADER-->
 
   <header class="header" data-header>
-
     <div class="overlay" data-overlay></div>
-
     <div class="header-top">
       <div class="container">
-
         <ul class="header-top-list">
+
 <!-- mail section  -->
         <li>
             <a href="mailto:cozycorner@gmail.com" class="header-top-link">
@@ -40,6 +37,7 @@
             <span>cozycorner@gmail.com</span>
         </a>
     </li>
+
 <!-- location || google maps link pending -->
         <li>
             <a href="https://maps.app.goo.gl/2iMQzLHGRhtJPM8L8" class="header-top-link">
@@ -47,29 +45,33 @@
             <address>Sector 33,Gurugram,Haryana,India</address>
             </a>
         </li>
-
         </ul>
+
 <!-- logos  -->
         <div class="wrapper">
           <ul class="header-top-social-list">
+
 <!-- facebook  || link Add krna baaki haii abhi-->
             <li>
               <a href="https://m.facebook.com" class="header-top-social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
+
 <!-- twitter || link Add krna baaki haii abhi -->
             <li>
               <a href="https://x.com/?lang=en-in" class="header-top-social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
+
 <!-- instagram || link Add krna baaki haii abhi-->
             <li>
               <a href="https://www.instagram.com/?hl=en" class="header-top-social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
+
 <!-- pinterest  || link Add krna baaki haii abhi-->
             <li>
               <a href="https://www.pinterest.com/login/" class="header-top-social-link">
@@ -80,8 +82,8 @@
 <!-- logo ends  -->
 
 <!-- buttons  -->
-          <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
-          <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a>
+          <!-- <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
+          <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a> -->
         </div>
       </div>
     </div>
@@ -94,20 +96,16 @@
           <img src="/CozyCorner-NewDesign/assets/icons8-cc.gif" alt="cozycorner logo">
         </a>
         <h1 id="name">Cozy Corner</h1>
-
         <nav class="navbar" data-navbar>
-
           <div class="navbar-top">
-
             <a href="#" class="logo">
-              <img src="assets/icons8-cc.gif" alt="CozyCorner logo">
+              <img src="/Images/cozy-corner-high-resolution-logo-black.png" alt="CozyCorner logo">
             </a>
-
             <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
           </div>
+
 <!-- <navigation links  -->
           <div class="navbar-bottom">
             <ul class="navbar-list">
@@ -171,49 +169,54 @@
   </header>
 
 
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+      <div class="hero-content">
+          <div class="hero-subtitle">
+              <ion-icon name="home-outline"></ion-icon>
+              <span>Sell Your Home</span>
+          </div>
+          <h1 class="h1 hero-title">Get the Best Value for Your Home</h1>
+          <p class="hero-text">List your property with us and reach thousands of potential buyers. Our team is here to help you get the best price for your home quickly and efficiently.</p>
+      </div>
+  </div>
+</section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1 style="margin-top: 200px;margin-bottom: 200px;">
-THIS SELL A HOME PAGE IS UNDER PROCESS........
-</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Sell a Home Form Section -->
+<section class="sell-home-form">
+  <div class="container">
+      <h2 class="h2 section-title">Sell Your Home</h2>
+      <form action="#" method="POST">
+          <div>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+              <label for="address">Property Address</label>
+              <input type="text" id="address" name="address" required>
+          </div>
+          <div>
+              <label for="price">Expected Price</label>
+              <input type="text" id="price" name="price" required>
+          </div>
+          <div>
+              <label for="description">Property Description</label>
+              <textarea id="description" name="description" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+      </form>
+  </div>
+</section>
 
   <!--footer-->
 

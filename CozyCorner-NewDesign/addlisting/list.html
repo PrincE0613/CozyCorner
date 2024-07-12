@@ -80,8 +80,9 @@
 <!-- logo ends  -->
 
 <!-- buttons  -->
-          <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
-          <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a>
+          <!-- <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
+          <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a> -->
+          
         </div>
       </div>
     </div>
@@ -100,7 +101,7 @@
           <div class="navbar-top">
 
             <a href="#" class="logo">
-              <img src="assets/icons8-cc.gif" alt="CozyCorner logo">
+              <img src="/Images/cozy-corner-high-resolution-logo-black.png" alt="CozyCorner logo">
             </a>
 
             <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
@@ -175,19 +176,64 @@
 
 
 
+<h1 style="margin-top: 200px;margin-bottom: 200px;">
+THIS ADD LISTINGS PAGE IS UNDER PROCESS........<br>
+<br><br><br><br>
+these options should be there /
+</h1>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- Main Content -->
+<main>
+  <section class="add-listing section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h1 class="h1">Add Your Property on Cozy Corner</h1>
+      </div>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="title" class="form-label">Property Title</label>
+          <input type="text" id="title" name="title" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="description" class="form-label">Property Description</label>
+          <textarea id="description" name="description" class="form-input" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="location" class="form-label">Location</label>
+          <input type="text" id="location" name="location" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="price" class="form-label">Price (INR)</label>
+          <input type="number" id="price" name="price" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="size" class="form-label">Size (sq ft)</label>
+          <input type="number" id="size" name="size" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="bedrooms" class="form-label">Bedrooms</label>
+          <input type="number" id="bedrooms" name="bedrooms" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="bathrooms" class="form-label">Bathrooms</label>
+          <input type="number" id="bathrooms" name="bathrooms" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="amenities" class="form-label">Amenities</label>
+          <input type="text" id="amenities" name="amenities" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="images" class="form-label">Upload Images</label>
+          <input type="file" id="images" name="images[]" class="form-input" multiple required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn">Submit Listing</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
 
 
 <h1 style="margin-top: 200px;margin-bottom: 200px;">
