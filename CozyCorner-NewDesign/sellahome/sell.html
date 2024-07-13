@@ -170,7 +170,7 @@
 
 
 <!-- Hero Section -->
-<section class="hero">
+<!-- <section class="hero">
   <div class="container">
       <div class="hero-content">
           <div class="hero-subtitle">
@@ -181,11 +181,11 @@
           <p class="hero-text">List your property with us and reach thousands of potential buyers. Our team is here to help you get the best price for your home quickly and efficiently.</p>
       </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- Sell a Home Form Section -->
-<section class="sell-home-form">
+<!-- <section class="sell-home-form">
   <div class="container">
       <h2 class="h2 section-title">Sell Your Home</h2>
       <form action="#" method="POST">
@@ -216,8 +216,63 @@
           <button type="submit" class="btn">Submit</button>
       </form>
   </div>
-</section>
+</section> -->
+<h1>Flat Rental Form</h1>
+<form id="flat-form" >
+    <label for="bhk">Select BHK:</label>
+    <select id="bhk" name="bhk">
+        <option value="1">1 BHK</option>
+        <option value="2">2 BHK</option>
+        <option value="3">3 BHK</option>
+        <!-- Add more options as needed -->
+    </select>
 
+    <label for="bedrooms">No. of Bedrooms:</label>
+    <input type="number" id="bedrooms" name="bedrooms" min="0" max="4">
+
+    <label for="bathrooms">No. of Bathrooms:</label>
+    <input type="number" id="bathrooms" name="bathrooms" min="0" max="4">
+
+    <label for="balconies">No. of Balconies:</label>
+    <input type="number" id="balconies" name="balconies" min="0">
+
+    <label for="area">Area (sq.ft):</label>
+    <input type="number" id="area" name="area" min="0">
+
+    <label for="furnishing">Furnishing:</label>
+    <select id="furnishing" name="furnishing">
+        <option value="furnished">Furnished</option>
+        <option value="semi-furnished">Semi-furnished</option>
+        <option value="unfurnished">Unfurnished</option>
+    </select>
+
+    <!-- Add other form fields (floor details, age of property, etc.) -->
+
+    <label for="available-from">Available From:</label>
+    <input type="date" id="available-from" name="available-from">
+
+    <label for="rent-amount">Rent Amount:</label>
+    <input type="number" id="rent-amount" name="rent-amount" min="0">
+
+    <label for="electricity-water">Electricity and Water Charges Excluded:</label>
+    <input type="checkbox" id="electricity-water" name="electricity-water">
+
+    <label for="price-negotiable">Price Negotiable:</label>
+    <input type="checkbox" id="price-negotiable" name="price-negotiable">
+
+    <label for="agreement-type">Preferred Agreement Type:</label>
+    <select id="agreement-type" name="agreement-type">
+        <option value="company-lease">Company Lease Agreement</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="brokers-contact">Are you okay with brokers contacting you?</label>
+    <input type="checkbox" id="brokers-contact" name="brokers-contact">
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
   <!--footer-->
 
   <footer class="footer">
