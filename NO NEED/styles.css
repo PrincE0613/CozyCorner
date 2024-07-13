@@ -1,4 +1,4 @@
-#searchFormHolderSection {
+/* #searchFormHolderSection {
     padding-bottom: 20px;
     background-color: #fff;
 }.mb-home, .mb-home * {
@@ -30,4 +30,167 @@
     --swiper-navigation-size: 44px;
 }:root {
     --swiper-theme-color: #007aff;
+} */
+
+
+
+/* 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+form h2 {
+    text-align: center;
+    color: #00e676;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #90caf9;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #00e676;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-size: 1em;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #90caf9;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00e676;
+    color: #121212;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c853;
+} */
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #1f1f1f;
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #2b2b2b;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff4500; /* Orange Soda color */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff4500; /* Orange Soda color */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 5px;
+    color: #f0f0f0;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff4500; /* Orange Soda color */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500; /* Orange Soda color */
+    border: none;
+    border-radius: 5px;
+    color: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e63e00; /* Darker shade of Orange Soda */
 }
