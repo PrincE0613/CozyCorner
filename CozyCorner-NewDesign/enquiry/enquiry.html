@@ -13,6 +13,7 @@
   <!--custom css link-->
   <link rel="stylesheet" href="enquiry.css">
 
+
   <!--google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,50 +172,78 @@
 <!-- icons buttons ends -->
   </header>
 
+  <!-- home  -->
+  <section class="hero" id="home" style="padding: 175px 0px 175px 0px;">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          <ion-icon name="home"></ion-icon>
 
+          <span>Real Estate website</span>
+        </p>
 
+        
+        <h2 class="h1 hero-title"> Fill the form below to to Submit your Enquiry</h2>
 
+        <p class="hero-text">Customer Support - Cozy Corner</p>
+      </div>
 
+      <figure class="hero-banner">
+        <img src="/CozyCorner-NewDesign/assets/download.jpg" alt="house image" class="w-100" />
+      </figure>
+    </div>
+  </section>
+  
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Enquiry Form</title>
+</head>
 
+<body>
+    <div class="enquiry-form-container" style="margin-left: 600px;">
+        <h2>Enquiry Form</h2>
+        <form id="enquiryForm">
+            <label for="name">Full Name:</label>
+            <input style="margin-left: 4px;" type="text" id="name" name="name" required>
 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
+            <label for="enquiryType">Type of Enquiry:</label>
+            <select id="enquiryType" name="enquiryType" required>
+                <option value="select" default selected>Select Enquiry Type</option>
+                <option value="buying">Buying</option>
+                <option value="selling">Selling</option>
+                <option value="renting">Renting</option>
+                <option value="general">General</option>
+            </select>
 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
+<!-- link krna baaki haii  -->
+            <a href="#"><button class="btn" style="display: inline-block;text-align: center;">Submit Enquiry</button></a>
+        </form>
+    </div>
 
+    <!-- <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Enquiry submitted successfully!');
+            // Implement form submission logic here (e.g., send data to server)
+        });
+    </script> -->
+</body>
+</html>
 
-
-
-
-
-
-
-
-
-<h1 style="margin-top: 200px;margin-bottom: 200px;">
-THIS ENQUIRY PAGE IS UNDER PROCESS........
-</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
   <!--footer-->
 
