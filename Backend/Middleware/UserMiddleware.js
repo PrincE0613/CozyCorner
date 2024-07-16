@@ -1,3 +1,5 @@
+const UserModel = require("../Models/UserSchema");
+
 exports.createUser = async (req, res) => {
   const data = req.body;
   console.log("okay", data);
