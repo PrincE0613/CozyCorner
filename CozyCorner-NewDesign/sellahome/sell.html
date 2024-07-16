@@ -88,175 +88,20 @@
             <label for="otherAmenities" style="font-size:medium;">Other Amenities:</label>
             <input type="text" id="otherAmenities" name="otherAmenities" style="box-sizing:content-box;">
         </div>
-      </div>
-    </div>
-<!-- icons buttons ends -->
-  </header>
 
+        <!-- House Details -->
+        <div id="houseSection" class="property-section">
+            <label for="landArea">Land Area (sq ft):</label>
+            <input type="number" id="landArea" name="landArea" required>
 
-<!-- Hero Section -->
-<!-- <section class="hero">
-  <div class="container">
-      <div class="hero-content">
-          <div class="hero-subtitle">
-              <ion-icon name="home-outline"></ion-icon>
-              <span>Sell Your Home</span>
-          </div>
-          <h1 class="h1 hero-title">Get the Best Value for Your Home</h1>
-          <p class="hero-text">List your property with us and reach thousands of potential buyers. Our team is here to help you get the best price for your home quickly and efficiently.</p>
-      </div>
-  </div>
-</section> -->
+            <label for="buildYear">Year Built:</label>
+            <input type="number" id="buildYear" name="buildYear" required>
 
+            <label for="garage">Garage:</label>
+            <input type="checkbox" id="garage" name="garage" value="Garage">Garage<br>
 
-<!-- Sell a Home Form Section -->
-<!-- <section class="sell-home-form">
-  <div class="container">
-      <h2 class="h2 section-title">Sell Your Home</h2>
-      <form action="#" method="POST">
-          <div>
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required>
-          </div>
-          <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-          </div>
-          <div>
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required>
-          </div>
-          <div>
-              <label for="address">Property Address</label>
-              <input type="text" id="address" name="address" required>
-          </div>
-          <div>
-              <label for="price">Expected Price</label>
-              <input type="text" id="price" name="price" required>
-          </div>
-          <div>
-              <label for="description">Property Description</label>
-              <textarea id="description" name="description" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn">Submit</button>
-      </form>
-  </div>
-</section> -->
-<h1>Flat Rental Form</h1>
-<form id="flat-form" >
-    <label for="bhk">Select BHK:</label>
-    <select id="bhk" name="bhk">
-        <option value="1">1 BHK</option>
-        <option value="2">2 BHK</option>
-        <option value="3">3 BHK</option>
-        <!-- Add more options as needed -->
-    </select>
-
-    <label for="bedrooms">No. of Bedrooms:</label>
-    <input type="number" id="bedrooms" name="bedrooms" min="0" max="4">
-
-    <label for="bathrooms">No. of Bathrooms:</label>
-    <input type="number" id="bathrooms" name="bathrooms" min="0" max="4">
-
-    <label for="balconies">No. of Balconies:</label>
-    <input type="number" id="balconies" name="balconies" min="0">
-
-    <label for="area">Area (sq.ft):</label>
-    <input type="number" id="area" name="area" min="0">
-
-    <label for="furnishing">Furnishing:</label>
-    <select id="furnishing" name="furnishing">
-        <option value="furnished">Furnished</option>
-        <option value="semi-furnished">Semi-furnished</option>
-        <option value="unfurnished">Unfurnished</option>
-    </select>
-
-    <!-- Add other form fields (floor details, age of property, etc.) -->
-
-    <label for="available-from">Available From:</label>
-    <input type="date" id="available-from" name="available-from">
-
-    <label for="rent-amount">Rent Amount:</label>
-    <input type="number" id="rent-amount" name="rent-amount" min="0">
-
-    <label for="electricity-water">Electricity and Water Charges Excluded:</label>
-    <input type="checkbox" id="electricity-water" name="electricity-water">
-
-    <label for="price-negotiable">Price Negotiable:</label>
-    <input type="checkbox" id="price-negotiable" name="price-negotiable">
-
-    <label for="agreement-type">Preferred Agreement Type:</label>
-    <select id="agreement-type" name="agreement-type">
-        <option value="company-lease">Company Lease Agreement</option>
-        <option value="other">Other</option>
-    </select>
-
-    <label for="brokers-contact">Are you okay with brokers contacting you?</label>
-    <input type="checkbox" id="brokers-contact" name="brokers-contact">
-
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" rows="4"></textarea>
-
-    <button type="submit">Submit</button>
-  <!--footer-->
-
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="/CozyCorner-NewDesign/assets/icons8-cc.gif" alt="Cozy Corner logo" id="loogoo">
-          </a>
-          <p class="section-text" style="font-size: 25px; font-weight: 700;">
-            Start Your Journey to a Cozy Home Today!</p>
-          <ul class="contact-list">
-            <li>
-              <a href="https://maps.app.goo.gl/2iMQzLHGRhtJPM8L8" class="contact-link">
-                <ion-icon name="location-outline"></ion-icon>
-                <address>Sector33, Gurugram,Haryana,India</address>
-              </a>
-            </li>
-
-            <li>
-              <a href="+91 9622136263" class="contact-link">
-                <ion-icon name="call-outline"></ion-icon>
-                <span>+91 9622136263</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:cozycorner@gmail.com" class="contact-link">
-                <ion-icon name="mail-outline"></ion-icon>
-                <span>cozycorner@gmail.com</span>
-              </a>
-            </li>
-          </ul>
-          <!-- logo-facebook -->
-          <ul class="social-list">
-            <li>
-              <a href="https://m.facebook.com" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <!-- logo-twitter  -->
-            <li>
-              <a href="https://x.com/?lang=en-in" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-            <!-- logo-linkedin -->
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-            <!-- logo-youtube -->
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
+            <label for="garden">Garden:</label>
+            <input type="checkbox" id="garden" name="garden" value="Garden">Garden<br>
         </div>
 
         <!-- Common Fields for both -->
@@ -265,9 +110,9 @@
 
         <label for="propertyTax">Property Tax Cost:</label>
         <input type="number" id="propertyTax" name="propertyTax" min="0">
-
+<!-- 
         <label for="maintenanceFee">Monthly Maintenance Fee:</label>
-        <input type="number" id="maintenanceFee" name="maintenanceFee" min="0">
+        <input type="number" id="maintenanceFee" name="maintenanceFee" min="0"> -->
 
         <!-- Submit Button -->
         <button type="submit">Submit</button>
