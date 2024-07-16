@@ -1,52 +1,17 @@
 const express = require("express");
-const connectWithDB = require("./db");
-const landlord = require("./model/landlord.model");
-const tenant = require("./model/tenant.model");
-const properties = require("./model/properties.model");
+const UserRotes = require("./Routes/UserRotes");
 const app = express();
-connectWithDB();
+const bodyparser = require("body-parser");
+require("./Connection/conn");
 
-app.get("/home", async (req, res) => {
-  res.send("home page");
-  console.log("home page");
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyparser.json());
+app.get("/", (req, res) => {
+  res.send("working");
 });
 
-app.get("/landlord", (req, res) => {
-  const newLandlord = landlord.create({
-    userID: 1,
-    name: "Radha",
-    email: "radha@gmail.com",
-    contact: 9897535444,
-  });
-
-  const newLandlord2 = landlord.create({
-    userID: 2,
-    name: "Krishna",
-    email: "krishna@gmail.com",
-    contact: 9876543210,
-  });
-
-  res.send("Land Lord");
-});
-
-app.get("/tenant", (req, res) => {
-  const newTenant = tenant.create({
-    userID: 1,
-    name: "Sparsh",
-    email: "Sparsh@gmail.com",
-    contact: 9897535444,
-  });
-
-  const newTenant2 = tenant.create({
-    userID: 2,
-    name: "Shyam",
-    email: "Shyam@gmail.com",
-    contact: 9876543210,
-  });
-
-  res.send("Tenant");
-});
+app.use(UserRotes);
 
 app.listen(8000, () => {
-  console.log("server is running on port 3000");
+  console.log("Server is running on port 8000");
 });
