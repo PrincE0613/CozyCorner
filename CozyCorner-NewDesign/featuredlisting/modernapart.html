@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing Rental Website</title>
+    <link rel="stylesheet" href="modernapart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn2XhwU3virATb9zAgc48DnqCS-zrcFjs"></script>
+    <!-- Replace YOUR_API_KEY with your actual API key -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>New Apartment Nice View</h1>
+
+      <!-- Gallery Section -->
+      <div class="gallery">
+        <a href="./images/house1-1.jpg" data-lightbox="property-gallery">
+          <img src="./images/house1-1.jpg" alt="Property Photo 1" />
+        </a>
+        <a href="./images/house1-2.jpg" data-lightbox="property-gallery">
+          <img src="./images/house1-2.jpg" alt="Property Photo 2" />
+        </a>
+        <a href="./images/house1-3.jpeg" data-lightbox="property-gallery">
+          <img src="./images/house1-3.jpeg" alt="Property Photo 3" />
+        </a>
+        <a
+          href="https://www.youtube.com/embed/_2XvgzTcWsk?si=8uKKXomKeFJ9T9qZ"
+          data-lightbox="video"
+          data-title="Property Video 1"
+          class="video-thumbnail-container"
+        >
+          <img src="./images/house1-1.jpg" alt="Property Video 1" />
+          <span class="play-button"></span>
+        </a>
+      </div>
+
+      <!-- Property Details Section -->
+      <div class="property-details">
+        <div class="property-header">
+          <h2>THE ULTIMATE LUXURY APARTMENT IN DELHI</h2>
+
+          <button onclick="showContactDetails()">Contact Details</button>
+        </div>
+        <div id="contact-details" class="contact-details">
+          <p>Owner: John Doe</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: johndoe@example.com</p>
+        </div>
+        <h4>₹1.02 Cr</h4>
+        <div class="property-description">
+          <p>
+            A beautiful family home located in a serene neighborhood. This
+            property offers 4 bedrooms, 3 bathrooms, and a spacious backyard.
+          </p>
+        </div>
+        <table class="property-info">
+          <tr>
+            <th>Feature</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td>LE MIGLIORI 10 case vacanza a Nuova, Delhi</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>₹30,000/month</td>
+          </tr>
+          <tr>
+            <td>Bedrooms</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Bathrooms</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>2500 sqft</td>
+          </tr>
+        </table>
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="modernapart.js"></script>
+  </body>
+</html>

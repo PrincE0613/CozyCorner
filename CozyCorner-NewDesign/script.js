@@ -39,3 +39,21 @@ window.addEventListener("scroll", function () {
 window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 });
+
+
+function showOptions() {
+    const propertyType = document.getElementById('propertyType').value;
+    const apartmentFields = document.getElementById('apartmentFields');
+    const houseFields = document.getElementById('houseFields');
+
+    if (propertyType === 'apartment') {
+        apartmentFields.style.display = 'block';
+        houseFields.style.display = 'none';
+    } else if (propertyType === 'house') {
+        apartmentFields.style.display = 'none';
+        houseFields.style.display = 'block';
+    } else {
+        apartmentFields.style.display = 'none';
+        houseFields.style.display = 'none';
+    }
+}

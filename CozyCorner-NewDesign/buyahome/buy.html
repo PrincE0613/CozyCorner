@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 
   <!--custom css link-->
   <link rel="stylesheet" href="/CozyCorner-NewDesign/style.css">
+  <link rel="stylesheet" href="/CozyCorner-NewDesign/buyahome/buys.css">
 
   <!--google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,33 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
+<!-- scripts  -->
+  <script>
+      function updateForm() {
+          const propertyType = document.getElementById('property-type').value;
+          const houseOptions = document.getElementById('house-options');
+          const apartmentOptions = document.getElementById('apartment-options');
+
+          if (propertyType === 'house') {
+              houseOptions.classList.remove('hidden');
+              apartmentOptions.classList.add('hidden');
+          } else if (propertyType === 'apartment') {
+              houseOptions.classList.add('hidden');
+              apartmentOptions.classList.remove('hidden');
+          } else {
+              houseOptions.classList.add('hidden');
+              apartmentOptions.classList.add('hidden');
+          }
+      }
+
+      window.onload = function() {
+          updateForm();
+      };
+  </script>
+    
+    
+    
 </head>
 
 <body>
@@ -92,7 +120,7 @@
       <div class="container">
 
 <!-- website logo  -->
-        <a href="#" class="logo">
+        <a href="/CozyCorner-NewDesign/index.html" class="logo">
           <img src="/CozyCorner-NewDesign/assets/icons8-cc.gif" alt="cozycorner logo">
         </a>
         <h1 id="name">Cozy Corner</h1>
@@ -171,50 +199,142 @@
     </div>
 <!-- icons buttons ends -->
   </header>
+  
+  <!-- home  -->
+  <section class="hero" id="home" style="padding: 175px 0px 175px 0px;">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          <ion-icon name="home"></ion-icon>
 
+          <span>Real Estate website</span>
+        </p>
 
+        
+        <h2 class="h1 hero-title">What are your Preferences</h2>
 
+        <p class="hero-text">Buy a home - Cozy Corner</p>
+      </div>
 
+      <figure class="hero-banner">
+        <img src="/" alt="house image" class="w-100" />
+      </figure>
+    </div>
+  </section>
 
+  <h2>Property Search Preferences</h2>
 
+<form>
+    <!-- Property Type -->
+    <label for="property-type">Property Type:</label>
+    <select id="property-type" name="property-type" onchange="updateForm()">
+        <option value="">Select...</option>
+        <option value="house">House</option>
+        <option value="apartment">Apartment</option>
+    </select>
+    <br><br>
 
+    <!-- Dynamic Options for House -->
+    <div id="house-options" class="hidden">
+        <label for="house-type">House Type:</label>
+        <select id="house-type" name="house-type">
+            <option value="detached">Detached</option>
+            <option value="semi-detached">Semi-Detached</option>
+            <option value="terraced">Terraced</option>
+            <option value="bungalow">Bungalow</option>
+        </select>
+        <br><br>
 
+        <label for="house-bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="house-bedrooms" name="house-bedrooms">
+        <br><br>
+    </div>
 
+    <!-- Dynamic Options for Apartment -->
+    <div id="apartment-options" class="hidden">
+        <label for="apartment-type">Apartment Type:</label>
+        <select id="apartment-type" name="apartment-type">
+            <option value="studio">Studio</option>
+            <option value="loft">Loft</option>
+            <option value="penthouse">Penthouse</option>
+        </select>
+        <br><br>
 
+        <label for="apartment-floor">Preferred Floor:</label>
+        <input type="number" id="apartment-floor" name="apartment-floor">
+        <br><br>
+    </div>
 
+    <!-- Buy or Rent -->
+    <label for="buy-rent">To Buy or To Rent:</label>
+    <select id="buy-rent" name="buy-rent">
+        <option value="buy">Buy</option>
+        <option value="rent">Rent</option>
+    </select>
+    <br><br>
 
+    <!-- Price Range -->
+    <label for="min-price">Minimum Price:</label>
+    <input type="number" id="min-price" name="min-price">
+    <br><br>
 
+    <label for="max-price">Maximum Price:</label>
+    <input type="number" id="max-price" name="max-price">
+    <br><br>
 
+    <!-- Location -->
+    <label for="state">State:</label>
+    <select id="state" name="state">
+        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Ladakh">Ladakh</option>
+        <option value="Lakshadweep">Lakshadweep</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Puducherry">Puducherry</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+    </select>
+    <br><br>
 
+    <!-- Area -->
+    <label for="min-area">Minimum Area (in sq. ft.):</label>
+    <input type="number" id="min-area" name="min-area">
+    <br><br>
 
+    <label for="max-area">Maximum Area (in sq. ft.):</label>
+    <input type="number" id="max-area" name="max-area">
+    <br><br>
+    <input type="submit" value="Save Preferences">
 
-
-
-
-
-<h1 style="margin-top: 200px;margin-bottom: 200px;">
-THIS BUY A HOME PAGE IS UNDER PROCESS........
-</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</form>
 
 
   <!--footer-->
