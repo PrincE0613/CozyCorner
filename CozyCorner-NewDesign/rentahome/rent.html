@@ -8,12 +8,11 @@
   <title>Cozy Corner - Find your dream house</title>
 
   <!--favicon-->
-  <link rel="shortcut icon" href="assets/icons8-cc.gif">
+  <link rel="shortcut icon" href="/CozyCorner-NewDesign/assets/icons8-cc.gif">
 
   <!--custom css link-->
   <link rel="stylesheet" href="/CozyCorner-NewDesign/style.css">
   <link rel="stylesheet" href="rent.css">
-
   <!--google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,8 +80,10 @@
 <!-- logo ends  -->
 
 <!-- buttons  -->
+
           <!-- <a href="addlisting/list.html" style="color: white;"><button class="header-top-btn">Add Listing</button></a>
           <a href="login/login.html" style="color: white;"><button class="header-top-btn">Signup/Login</button></a> -->
+
         </div>
       </div>
     </div>
@@ -172,13 +173,126 @@
   </header>
 
 
-<h1>Hello ,<br>
-The page is under progress ....</h1>
+        <!-- home  -->
+        <section class="hero" id="home" style="padding: 175px 0px 175px 0px;">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-subtitle">
+                  <ion-icon name="home"></ion-icon>
+  
+                  <span>Real Estate website</span>
+                </p>
+  
+                
+                <h2 class="h1 hero-title">Tell us what are your preferences about your <span style="color: chartreuse;margin-top: 5px;">Dream Home</span></h2>
+  
+                <p class="hero-text">Get homes with Cozy Corner</p> 
+              </div>
+  
+              <figure class="hero-banner">
+                <img src="/CozyCorner-NewDesign/assets/torents.jpg" alt="house image" class="w-100" />
+              </figure>
+            </div>
+          </section>
+          
+<!-- main form  -->
+                        <div class="form-container">                            
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <h2 style="text-align: center;">fill your preferences</h2>
+        
+        
+    <div class="preferences-container">
 
+      <form class="preferences-form">
+          <div class="preference-item">
+              <label for="location">Location:</label>
+              <!-- <input type="text" id="location" name="location" placeholder="Enter city or neighborhood"> -->
+              <!--- India states -->
+<select id="country-state" name="country-state">
+  <option value="">Select state</option>
+  <option value="AN">Andaman and Nicobar Islands</option>
+  <option value="AP">Andhra Pradesh</option>
+  <option value="AR">Arunachal Pradesh</option>
+  <option value="AS">Assam</option>
+  <option value="BR">Bihar</option>
+  <option value="CH">Chandigarh</option>
+  <option value="CT">Chhattisgarh</option>
+  <option value="DN">Dadra and Nagar Haveli</option>
+  <option value="DD">Daman and Diu</option>
+  <option value="DL">Delhi</option>
+  <option value="GA">Goa</option>
+  <option value="GJ">Gujarat</option>
+  <option value="HR">Haryana</option>
+  <option value="HP">Himachal Pradesh</option>
+  <option value="JK">Jammu and Kashmir</option>
+  <option value="JH">Jharkhand</option>
+  <option value="KA">Karnataka</option>
+  <option value="KL">Kerala</option>
+  <option value="LA">Ladakh</option>
+  <option value="LD">Lakshadweep</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="MH">Maharashtra</option>
+  <option value="MN">Manipur</option>
+  <option value="ML">Meghalaya</option>
+  <option value="MZ">Mizoram</option>
+  <option value="NL">Nagaland</option>
+  <option value="OR">Odisha</option>
+  <option value="PY">Puducherry</option>
+  <option value="PB">Punjab</option>
+  <option value="RJ">Rajasthan</option>
+  <option value="SK">Sikkim</option>
+  <option value="TN">Tamil Nadu</option>
+  <option value="TG">Telangana</option>
+  <option value="TR">Tripura</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="UT">Uttarakhand</option>
+  <option value="WB">West Bengal</option>
+</select>
+          </div>
+          <div class="preference-item">
+              <label for="price-range">Price Range:</label>
+              <!-- <input type="text" id="price-range" name="price-range" placeholder="e.g., $1000 - $2000"> -->
+              <select>
+                <option value="option1">Select Range</option>
+                <option value="option1">0-1Lac</option>
+                <option value="option2">1-2Lac</option>
+                <option value="option3">2-3Lac</option>
+                <option value="option3">3-4Lac</option>
+                <option value="option3">Above 4Lac</option>
+              </select>
+          </div>
+          <div class="preference-item">
+              <label for="size">Size (sq ft):</label>
+              <input type="number" id="size" name="size" placeholder="e.g., 800">
+          </div>
+          <div class="preference-item">
+              <label for="bedrooms">Bedrooms:</label>
+              <input type="number" id="bedrooms" name="bedrooms" placeholder="e.g., 2">
+          </div>
+          <div class="preference-item">
+              <label for="bathrooms">Bathrooms:</label>
+              <input type="number" id="bathrooms" name="bathrooms" placeholder="e.g., 2">
+          </div>
+          <div class="preference-item">
+              <label for="amenities">Amenities:</label>
+              <input type="text" id="amenities" name="amenities" placeholder="e.g., Pool, Gym">
+          </div>
+          <div class="preference-item">
+              <label for="pet-friendly">Pet-Friendly:</label>
+              <select id="pet-friendly" name="pet-friendly">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+              </select>
+          </div>
+        
+        </select>
 
+        <a href="/CozyCorner-NewDesign/featuredlisting/niceview.html"><button class="btn">Search homes</button></a>
+    </form>
+</div>
+</body>
 
-
-
+<!-- main from ends here  -->
 
   <!--footer-->
 

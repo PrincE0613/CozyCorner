@@ -1,0 +1,61 @@
+.form-container {
+    /* background-color: #ffffff; */
+    padding: 20px;
+    /* max-width: 500px;
+    width: 100%; */
+    /* margin-left:500px; */
+}
+
+form {
+    display:inline-block;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(34, 100%, 40%);
+}
+
+.btn{
+    margin-left: 700px;
+}

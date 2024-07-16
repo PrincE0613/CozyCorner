@@ -1,12 +1,55 @@
-/* *{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
-    }
-    
-    h1{
-    text-align: center;
-    } */
-    
-    
-    
-    /* Customize styles as needed */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.preferences-container {
+    /* background-color: #ffffff; */
+    padding: 30px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 500px;
+    margin-left: 550px;
+}
+
+.preferences-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preference-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.preference-item label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.preference-item input,
+.preference-item select {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.preference-item input::placeholder {
+    color: #999999;
+}
+
+.btn{
+    margin-top: 15px;
+    margin-left: 105px;
+}
