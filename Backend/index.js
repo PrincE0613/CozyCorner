@@ -6,9 +6,6 @@ require("./Connection/conn");
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
-app.get("/", (req, res) => {
-  res.send("working");
-});
 
 app.use(UserRotes);
 
