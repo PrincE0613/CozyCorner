@@ -213,6 +213,10 @@
 
         <!-- home  -->
         <section class="hero" id="home">
+          <div class="aibot">
+            <a href="../bot]/index.html" onclick="openPopup()"> AI BOT </a>
+          </div>
+
           <div class="container">
             <div class="hero-content">
               <p class="hero-subtitle">
@@ -507,7 +511,9 @@
                       <strong>₹ 92.07 L - 1.3 Cr</strong>
                     </div>
                     <h3 class="h3 card-title">
-                      <a href="./featuredlisting/modernapart.html">Modern Apartments</a>
+                      <a href="./featuredlisting/modernapart.html"
+                        >Modern Apartments</a
+                      >
                     </h3>
                     <p class="card-text" style="text-transform: capitalize">
                       THE ULTIMATE LUXURY APARTMENT IN BANGALORE
@@ -592,7 +598,9 @@
                       <strong>₹ 1.02 - 1.3 Cr</strong>
                     </div>
                     <h3 class="h3 card-title">
-                      <a href="./featuredlisting/comfortable.html">Comfortable Apartment</a>
+                      <a href="./featuredlisting/comfortable.html"
+                        >Comfortable Apartment</a
+                      >
                     </h3>
                     <p class="card-text" style="text-transform: capitalize">
                       THE ULTIMATE LUXURY APARTMENT IN BANGALORE
@@ -1218,5 +1226,12 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
