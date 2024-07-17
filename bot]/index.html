@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishn's World</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-image: url("bg.jpg"); /* Add your background image here */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+      }
+      .logo {
+        margin-top: 10px;
+        animation: fadeIn 2s;
+      }
+      .logo img {
+        width: 200px;
+        height: 200px;
+      }
+      .content {
+        text-align: center;
+        width: 80%;
+
+        margin-top: 20px;
+        animation: fadeIn 2s;
+        /* Semi-transparent background for better readability */
+      }
+      .content h2 {
+        background: #121fcf;
+        background: linear-gradient(to right, #121fcf 0%, #4dcf1d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 1px #2e7fe9, 0 0 5px #000000;
+
+        margin-top: 1px;
+        font-size: 2em;
+        animation: slideIn 1.5s;
+      }
+      .content label {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.2em;
+        text-align: left;
+        color: #fff;
+      }
+      .content input,
+      .content textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Slightly transparent background */
+        color: #000; /* Black text for better contrast */
+      }
+      .content input::placeholder,
+      .content textarea::placeholder {
+        color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark placeholder text for better readability */
+      }
+      .content button {
+        padding: 15px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+      }
+      .content button:hover {
+        background-color: #0056b3;
+      }
+      .response {
+        margin-top: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Almost opaque background for better readability */
+        color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+        animation: fadeIn 2s;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+      <!-- Add your logo image here -->
+    </div>
+    <div class="content">
+      <h2>
+        Solve Your Problem with<br />
+        श्रीमद भगवद गीता !
+      </h2>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <label for="problem">Your Problem</label>
+      <textarea
+        id="problem"
+        rows="4"
+        placeholder="Describe your problem"
+      ></textarea>
+      <button onclick="getResponse()">कृष्ण सदा सहायते</button>
+      <div class="response" id="response"></div>
+    </div>
+
+    <script>
+      async function getResponse() {
+        const name = document.getElementById("name").value;
+        const problem = document.getElementById("problem").value;
+
+        const responseDiv = document.getElementById("response");
+        responseDiv.innerHTML = "Loading...";
+
+        const response = await fetch(
+          "https://govindji.onrender.com/getResponse",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, problem }),
+          }
+        );
+
+        const text = await response.text();
+        responseDiv.innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
