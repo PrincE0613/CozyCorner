@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Krishn's World</title>
+    <title>CoZY CoRnER Help</title>
     <style>
       body {
         margin: 0;
         padding: 0;
         font-family: "Arial", sans-serif;
-        background-image: url("bg.jpg"); /* Add your background image here */
+        background-image: url("../CozyCorner-NewDesign/assets/botbg.jpg"); /* Add your background image here */
         background-size: cover;
         background-position: center;
         display: flex;
@@ -23,8 +23,8 @@
         animation: fadeIn 2s;
       }
       .logo img {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
       }
       .content {
         text-align: center;
@@ -35,11 +35,14 @@
         /* Semi-transparent background for better readability */
       }
       .content h2 {
-        background: #121fcf;
+        color: white !important;
+      }
+      .content h2 {
+        background: #fcfdff;
         background: linear-gradient(to right, #121fcf 0%, #4dcf1d 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-shadow: 0 1px #2e7fe9, 0 0 5px #000000;
+        text-shadow: 0 1px #000000, 0 0 5px #fef5f5;
 
         margin-top: 1px;
         font-size: 2em;
@@ -128,13 +131,13 @@
   </head>
   <body>
     <div class="logo">
-      <img src="logo.png" alt="Logo" />
+      <img src="../CozyCorner-NewDesign/assets/icons8-cc.gif" alt="Logo" />
       <!-- Add your logo image here -->
     </div>
     <div class="content">
       <h2>
-        Solve Your Problem with<br />
-        श्रीमद भगवद गीता !
+        Ask Any Problem <br />
+        Related To Choose Home!
       </h2>
       <label for="name">Your Name</label>
       <input type="text" id="name" placeholder="Enter your name" />
@@ -144,7 +147,7 @@
         rows="4"
         placeholder="Describe your problem"
       ></textarea>
-      <button onclick="getResponse()">कृष्ण सदा सहायते</button>
+      <button onclick="getResponse()">Solution</button>
       <div class="response" id="response"></div>
     </div>
 

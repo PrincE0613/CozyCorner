@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.post("/getResponse", async (req, res) => {
   const { name, problem } = req.body;
 
-  const prompt = `You are lord krishna and i want you to give solution to my problem which is that '${problem}' , Give the solution from bhagwat geeta book including its phrases, and also make sure that the format of output is in the form of a letter from lord krishna`;
+  const prompt = `You are experienced landlord and i want you to give solution to my problem which is that '${problem}' , Give the solution as perfect landolord as its phrases, and also make sure that the format of output is in the form of a letter from from a experienced landlord`;
 
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
